@@ -10,24 +10,24 @@ This script allows developers to install a LEMP Stack. The LEMP software stack i
    - NodeJS & NPM pre-installed
 
 
-**Step One**
+**Step One**    
 Please be sure you make this file will execute by running `chmod +x install.sh`.
 
-**Step Two**
+**Step Two**    
 Cd into this folder and run this script as sudo by typing `sudo ./install.sh`.
 
-**Step Three*
+**Step Three**  
 After you did run this script, we need to let nginx listen to PHP7.3 fpm.
 Replace the `www.conf` inside `/etc/php/7.3/fpm/pool.d` with the contents of the `example.www.conf_PHP7.3fpm` file attached in this folder.
 
-**Step Four**
+**Step Four**   
 Setup a serverblock inside the nginx folder `/etc/nginx/conf.d/mywebsite.test.conf` (http://mywebite.test). You can copy the example file
 also attached in this folder. `example.mydomain.conf_nginx`.
 
-**Step Five**
+**Step Five**   
 Do `service nginx reload` to check if the conf.d file is correct. When it is we will run `service nginx restart` and also `service php7.3-fpm restart`.
 
-**Tips**
+**Tips**    
 * Be sure you'll put all the hostnames into your hostfile.
 * `chown` your files to `www-data:www-data` will somethimes help if you have some issues.
 
