@@ -31,3 +31,8 @@ Do `service nginx reload` to check if the conf.d file is correct. When it is we 
 * Be sure you'll put all the hostnames into your hostfile.
 * `chown` your files to `www-data:www-data` will somethimes help if you have some issues.
 * Reads about whats new inside PHP7.3 here: https://ayesh.me/Upgrade-PHP-7.3
+* With new PHP 7.3 installed, you can remove your old PHP versions if you want.
+
+`apt purge php7.2 php7.2-common # Change 7.2 with whatever current version you have.`
+
+So that's it, you should have PHP 7.3 running. Note that automatic upgrades (unattended-upgrades) will not work on Ondrej's PPA, so you still need to manually upgrade your PHP versions. Make sure to run apt update and apt upgrade to upgrade to the latest PHP version.
