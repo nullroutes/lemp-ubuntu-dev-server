@@ -30,4 +30,4 @@ Do `service nginx reload` to check if the conf.d file is correct. When it is we 
 **Tips**    
 * Be sure you'll put all the hostnames into your hostfile.
 * `chown` your files to `www-data:www-data` will somethimes help if you have some issues.
-
+* Reads about whats new inside PHP7.3 here: https://ayesh.me/Upgrade-PHP-7.3
