@@ -19,13 +19,6 @@ apt install php7.3 php7.3-common php7.3-cli
 apt install php7.3-bcmath php7.3-bz2 php7.3-curl php7.3-gd php7.3-intl php7.3-json php7.3-mbstring php7.3-readline php7.3-xml php7.3-zip
 apt install php7.3-fpm
 
-#repos for php 7
-#apt-get -y install software-properties-common
-#install php 7.3 (latest)
-#apt-get -y install php7.3 php7.3-fpm php7.3-gd php7.3-mysql php7.3-dev php7.3-curl php7.3-mbstring php7.3-xml php7.3-imap php7.3-zip
-#install php 5.6 (older one, for historical projects)
-#apt-get -y install php5.6 php5.6-mcrypt php5.6-fpm php5.6-gd php5.6-mysql php5.6-dev php5.6-curl php5.6-mbstring php5.6-dom
-
 #installing composer (globally)
 wget https://getcomposer.org/composer.phar -O /usr/local/bin/composer
 chmod 755 /usr/local/bin/composer
