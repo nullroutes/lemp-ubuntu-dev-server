@@ -12,12 +12,11 @@ apt-get install -y nano vim htop telnet git curl gcc openssh-server net-tools ml
 sed -i -e 's/^PermitRootLogin/#PermitRootLogin/g' /etc/ssh/sshd_config
 
 #Setup Repo for all mainframe PHP versions.
-LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
+LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/nginx
 apt-get update
 
-apt install php7.3 php7.3-common php7.3-cli
-apt install php7.3-bcmath php7.3-bz2 php7.3-curl php7.3-gd php7.3-intl php7.3-json php7.3-mbstring php7.3-readline php7.3-xml php7.3-zip php7.3-mysql
-apt install php7.3-fpm
+apt install php7.4-fpm php7.4-common php7.4-cli
+apt install php7.4-bcmath php7.4-bz2 php7.4-curl php7.4-gd php7.4-intl php7.4-json php7.4-mbstring php7.4-readline php7.4-xml php7.4-zip php7.4-mysql
 
 #installing composer (globally)
 wget https://getcomposer.org/composer.phar -O /usr/local/bin/composer
